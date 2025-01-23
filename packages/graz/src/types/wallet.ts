@@ -21,6 +21,8 @@ export enum WalletType {
   STATION = "station",
   XDEFI = "xdefi",
   CAPSULE = "capsule",
+  // eslint-disable-next-line @typescript-eslint/naming-convention
+  CAPSULE_EMBEDDED = "capsuleEmbedded",
   COSMIFRAME = "cosmiframe",
   COMPASS = "compass",
   INITIA = "initia",

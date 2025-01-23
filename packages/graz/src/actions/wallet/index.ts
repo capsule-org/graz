@@ -3,6 +3,7 @@ import { grazSessionDefaultValues, useGrazInternalStore, useGrazSessionStore } f
 import type { Wallet } from "../../types/wallet";
 import { WALLET_TYPES, WalletType } from "../../types/wallet";
 import { getCapsule } from "./capsule";
+import { getCapsuleEmbedded } from "./capsuleEmbedded";
 import { getCompass } from "./compass";
 import { getCosmiframe } from "./cosmiframe";
 import { getMetamaskSnapCosmos } from "./cosmos-metamask-snap";
@@ -113,6 +114,9 @@ export const getWallet = (type: WalletType = useGrazInternalStore.getState().wal
       case WalletType.OKX: {
         return getOkx();
       }
+      case WalletType.CAPSULE_EMBEDDED: {
+        return getCapsuleEmbedded();
+      }
 
       default: {
         throw new Error("Unknown wallet type");
@@ -133,6 +137,10 @@ export const getAvailableWallets = (): Record<WalletType, boolean> => {
 
 export const isCapsule = (type: WalletType): boolean => {
   return type === WalletType.CAPSULE;
+};
+
+export const isCapsuleEmbedded = (type: WalletType): boolean => {
+  return type === WalletType.CAPSULE_EMBEDDED;
 };
 
 export const isWalletConnect = (type: WalletType): boolean => {

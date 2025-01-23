@@ -1,4 +1,5 @@
 import type { ChainInfo } from "@keplr-wallet/types";
+import CapsuleWeb from "@usecapsule/react-sdk";
 
 import type { CapsuleConfig, ChainConfig, GrazInternalStore, IframeOptions } from "../store";
 import { useGrazInternalStore } from "../store";
@@ -9,6 +10,7 @@ export interface ConfigureGrazArgs {
   chains: ChainInfo[];
   chainsConfig?: Record<string, ChainConfig>;
   capsuleConfig?: CapsuleConfig;
+  capsule?: CapsuleWeb;
   onNotFound?: () => void;
   onReconnectFailed?: () => void;
   walletConnect?: GrazInternalStore["walletConnect"];
@@ -34,6 +36,7 @@ export const configureGraz = (args: ConfigureGrazArgs): ConfigureGrazArgs => {
     walletConnect: args.walletConnect || prev.walletConnect,
     walletType: args.defaultWallet || prev.walletType,
     capsuleConfig: args.capsuleConfig || prev.capsuleConfig,
+    capsuleEmbedded: args.capsule || prev.capsuleEmbedded,
     walletDefaultOptions: args.walletDefaultOptions || prev.walletDefaultOptions,
     chains: args.chains,
     chainsConfig: args.chainsConfig || prev.chainsConfig,
