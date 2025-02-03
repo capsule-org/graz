@@ -6,7 +6,7 @@ import { grazSessionDefaultValues, useGrazInternalStore, useGrazSessionStore } f
 import type { Maybe } from "../types/core";
 import type { Key, WalletType } from "../types/wallet";
 import type { ChainId } from "../utils/multi-chain";
-import { checkWallet, getWallet, isCapsule, isCapsuleEmbedded, isWalletConnect } from "./wallet";
+import { checkWallet, getWallet, isCapsule, isPara, isWalletConnect } from "./wallet";
 
 export type ConnectArgs = Maybe<{
   chainId: ChainId;
@@ -91,7 +91,7 @@ export const connect = async (args?: ConnectArgs): Promise<ConnectResult> => {
       return { accounts: _resAcc!, walletType: currentWalletType, chains: connectedChains };
     }
     await wallet.enable(chainIds);
-    if (isCapsuleEmbedded(currentWalletType)) {
+    if (isPara(currentWalletType)) {
       useGrazSessionStore.setState({ status: "connecting" });
       await wallet.onAfterLoginSuccessful?.();
       const connectedChains = chainIds.map((x) => chains!.find((y) => y.chainId === x)!);
