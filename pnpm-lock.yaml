@@ -238,11 +238,11 @@ importers:
         specifier: 0.1.0
         version: 0.1.0(@cosmjs/amino@0.31.3)(@cosmjs/proto-signing@0.31.3)
       '@getpara/cosmjs-v0-integration':
-        specifier: 0.1.0
-        version: 0.1.0(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.32.4)(@cosmjs/proto-signing@0.31.3)
+        specifier: '>=1.0.0'
+        version: 1.6.0(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.32.4)(@cosmjs/proto-signing@0.31.3)
       '@getpara/react-sdk':
-        specifier: 0.1.0
-        version: 0.1.0(@emotion/is-prop-valid@1.2.2)(@types/react@18.2.21)(immer@9.0.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: '>=1.0.0'
+        version: 1.6.0(@emotion/is-prop-valid@1.2.2)(@types/react@18.2.21)(immer@9.0.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@keplr-wallet/cosmos':
         specifier: 0.12.156
         version: 0.12.156(starknet@6.11.0)
@@ -2361,39 +2361,39 @@ packages:
   '@floating-ui/utils@0.2.8':
     resolution: {integrity: sha512-kym7SodPp8/wloecOpcmSnWJsK7M0E5Wg8UcFA+uO4B9s5d0ywXOEro/8HM9x0rW+TljRzul/14UYz3TleT3ig==}
 
-  '@getpara/core-components@0.1.0':
-    resolution: {integrity: sha512-rLPL+Zd9hQ04YJfzH6Dj15rvo1MHABJXvncAZrKKIoxbwfvcAZEMB1295gxw8AYbB8KFQqym8l58D6Vn5ej6TQ==}
+  '@getpara/core-components@1.6.0':
+    resolution: {integrity: sha512-sqt8hULrYgICMZ7+6SnGlbB2oYvPo3X3LMCTBjrxC72RzWLYcbSxK5g1G818WRlODu+dLJXIRHJvTKmhzsU4qw==}
 
-  '@getpara/core-sdk@0.1.0':
-    resolution: {integrity: sha512-KgxD3xUqycl/T+kHMorkeMuG1aty1x7dhLVglpg1/z3U2EvkAKZK4+wTvkmzatHae+bu18x5uJ+PhvffM2wj0w==}
+  '@getpara/core-sdk@1.6.0':
+    resolution: {integrity: sha512-XJP2GYLrTZITZAgcCF/WcMtyc6t79+jSi7RcRmQhR6xMTGvLgxJ2DGUASXqDWD7Nff9M3lgltRHEC5fMnZMGfA==}
 
-  '@getpara/cosmjs-v0-integration@0.1.0':
-    resolution: {integrity: sha512-pqEoC0MOFHZpYyH/I7nlfvYeRpM8/HZoC/xny+afr2EJmGw1a5+X9bc2x18zvKYf3LnmWuzfFr4B85W0WxZH1w==}
+  '@getpara/cosmjs-v0-integration@1.6.0':
+    resolution: {integrity: sha512-3j99YdNEymIC5RKwL7VVd8NBIEvBRyG2VJGtCvnMSiFaCzANbUKiHqeNhzDHWQ713mV0K5d6RHfX/y2sSDlr9w==}
     peerDependencies:
       '@cosmjs/amino': '>= 0.31.3 < 1'
       '@cosmjs/encoding': '>= 0.31.3 < 1'
       '@cosmjs/proto-signing': '>= 0.31.3 < 1'
 
-  '@getpara/react-common@0.1.0':
-    resolution: {integrity: sha512-fNvNCPmuNY+mOdJZJwkphs8RcFWJQqUAMy1VXwvrclwMPXzC6JBT2DQmANCjV0tNKTI0WuZSJ7iwB2BEIH37bA==}
+  '@getpara/react-common@1.6.0':
+    resolution: {integrity: sha512-BLW1fYFBtbTiU1EplwUfVTLH9M5hh9cHwAknOGsKYGKtxRjx7qDz5ZX+ggXvDGWiNnrzYNv8SPNvI/5/Cn7roA==}
     peerDependencies:
       react: '*'
       react-dom: '*'
 
-  '@getpara/react-components@0.1.0':
-    resolution: {integrity: sha512-VO9dfP0mqkcc0uVjPXmirPo3JPrUwK33eIc0pTptGKaIKdAbADZ5krVD/ZQ97Nwm8SPdHqjT1vEVnKYpvnvm0w==}
+  '@getpara/react-components@1.6.0':
+    resolution: {integrity: sha512-SYfhIfoQljobNBp9IG6wE6GTpHa+6PhxuwSheqLkKN9D0alzqd+yg3xf4y56CzqvvK/JkOktmXhEaYlkA1bGrA==}
 
-  '@getpara/react-sdk@0.1.0':
-    resolution: {integrity: sha512-UQtM0KqRBhB5SnlyPHqAjgFHaxSsHwx+kgqI9MSDtVsJOThklwIYP31pvzOcAkjIcVvEBbAZUW1071HbE3OmSA==}
+  '@getpara/react-sdk@1.6.0':
+    resolution: {integrity: sha512-PtQtqRmSMBjxAeCbWN/PIqhWxsoaCvK/4TPanJ1tFslTSIFwSqEiyzDC+HlkIsATlxggok3d0EdQewIVbVvF+w==}
     peerDependencies:
       react: '*'
       react-dom: '*'
 
-  '@getpara/user-management-client@0.1.0':
-    resolution: {integrity: sha512-4UbFI6zQ8u5EEV+Jv3oZpP4tHRSU1SW5l7HLXDrp2MDKIUfMfHHqxvzG5wQuRawCrkq9/YbxbZiBtBLwm34cBQ==}
+  '@getpara/user-management-client@1.6.0':
+    resolution: {integrity: sha512-fsoBWgB5nYOt0c2xmpb/nuvFpMEAOzsllme+m0nk+g9pshARy30SAFj1VViYBDkIBtgt/KAgxVgaJD7pMbyF5w==}
 
-  '@getpara/web-sdk@0.1.0':
-    resolution: {integrity: sha512-UD9wE/G+zXdxhSL6KbPG3G8/HoRh5tpPFoFiBD63FhRK8pfwLFDZhszt8iAQncZanKczeRYTlNYBg6Rwe2+gVg==}
+  '@getpara/web-sdk@1.6.0':
+    resolution: {integrity: sha512-EFcYLQs0xKv9ahRT76q0KKVURAupnkLzTK0ygM9Mh9A/GhTDmGlUbYTF4rlazk60Xz69TDTjOmA8Bk6z+9OLmg==}
 
   '@graz-sh/style-guide@4.0.1':
     resolution: {integrity: sha512-0vh1v2TbdmDyMT+9QWW2GIsAv81gnUhfBYqH9CzXkwvrbvlNQuo7lawoLQ83ph8TL2CP09q6ZzgQ2g6uzNjGrw==}
@@ -3612,6 +3612,30 @@ packages:
   '@scure/starknet@1.0.0':
     resolution: {integrity: sha512-o5J57zY0f+2IL/mq8+AYJJ4Xpc1fOtDhr+mFQKbHnYFmm3WQrC+8zj2HEgxak1a+x86mhmBC1Kq305KUpVf0wg==}
 
+  '@sentry-internal/browser-utils@9.9.0':
+    resolution: {integrity: sha512-V/YhKLis98JFkqBGZaEBlDNFpJHJjoCvNb05raAYXdITfDIl37Kxqj0zX+IzyRhqnswkQ+DBTyoEoci09IR2bQ==}
+    engines: {node: '>=18'}
+
+  '@sentry-internal/feedback@9.9.0':
+    resolution: {integrity: sha512-hrxuOLm0Xsnx75hTNt3eLgNNjER3egrHZShdRzlMiakfKpA9f2X10z75vlZmT5ZUygDQnp9UVUnu28cDuVb9Zw==}
+    engines: {node: '>=18'}
+
+  '@sentry-internal/replay-canvas@9.9.0':
+    resolution: {integrity: sha512-YK0ixGjquahGpNsQskCEVwycdHlwNBLCx9XJr1BmGnlOw6fUCmpyVetaGg/ZyhkzKGNXAGoTa4s7FUFnAG4bKg==}
+    engines: {node: '>=18'}
+
+  '@sentry-internal/replay@9.9.0':
+    resolution: {integrity: sha512-EWczKMu3qiZ0SUUWU3zkGod+AWD/VQCLiQw+tw+PEpdHbRZIdYKsEptengZCFKthrwe2QmYpVCTSRxGvujJ/6g==}
+    engines: {node: '>=18'}
+
+  '@sentry/browser@9.9.0':
+    resolution: {integrity: sha512-pIMdkOC+iggZefBs6ck5fL1mBhbLzjdw/8K99iqSeDh+lLvmlHVZajAhPlmw50xfH8CyQ1s22dhcL+zXbg3NKw==}
+    engines: {node: '>=18'}
+
+  '@sentry/core@9.9.0':
+    resolution: {integrity: sha512-GxKvx8PSgoWhLLS+/WBGIXy7rsFcnJBPDqFXIfcAGy89k2j06d9IP0kiIc63qBGStSUkh5FFJLPTakZ5RXiFXA==}
+    engines: {node: '>=18'}
+
   '@sideway/address@4.1.4':
     resolution: {integrity: sha512-7vwq+rOHVWjyXxVlR76Agnvhy8I9rpzjosTESvmhNeXOXdZZB15Fl+TI9x1SiHZH5Jv2wTGduSxFDIaq0m3DUw==}
 
@@ -3913,6 +3937,9 @@ packages:
 
   '@types/ms@0.7.31':
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
+
+  '@types/node-fetch@2.6.12':
+    resolution: {integrity: sha512-8nneRWKCg3rMtF69nLQJnOYUcbafYeFSjqkw3jCRLsqkWFlHaoQrr5mXmofFGOx3DKn7UfmBMyov8ySvLRVldA==}
 
   '@types/node@10.12.18':
     resolution: {integrity: sha512-fh+pAqt4xRzPfqA6eh3Z2y6fyZavRIumvjhaCL753+TVkGKGhpPeyrJG2JftD0T9q4GF00KjefsQ+PQNDdWQaQ==}
@@ -5369,6 +5396,9 @@ packages:
   detect-browser@5.3.0:
     resolution: {integrity: sha512-53rsFbGdwMwlF7qvCt0ypLM5V5/Mbl0szB7GPN8y9NCcbknYOeVVXdrXEq+90IwAfrrzt6Hd+u2E2ntakICU8w==}
 
+  detect-europe-js@0.1.2:
+    resolution: {integrity: sha512-lgdERlL3u0aUdHocoouzT10d9I89VVhk0qNRmll7mXdGfJT1/wqZ2ZLA4oJAjeACPY5fT1wsbq2AT+GkuInsow==}
+
   detect-libc@1.0.3:
     resolution: {integrity: sha512-pGjwhsmsp4kL2RTz08wcOlGN83otlqHeD/Z5T8GXZB+/YcpQ/dgo+lbU8ZsGxV0HIvqqxo9l7mqYwyYMD9bKDg==}
     engines: {node: '>=0.10'}
@@ -6717,6 +6747,9 @@ packages:
 
   is-shared-array-buffer@1.0.2:
     resolution: {integrity: sha512-sqN2UDu1/0y6uvXyStCOzyhAjCSlHceFoMKJW8W9EU9cvic/QdsZ0kEU93HEy3IUEFZIiH/3w+AH/UQbPHNdhA==}
+
+  is-standalone-pwa@0.1.1:
+    resolution: {integrity: sha512-9Cbovsa52vNQCjdXOzeQq5CnCbAcRk05aU62K20WO372NrTv0NxibLFCK6lQ4/iZEFdEA3p3t2VNOn8AJ53F5g==}
 
   is-stream@2.0.1:
     resolution: {integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==}
@@ -9271,11 +9304,14 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  ua-is-frozen@0.1.2:
+    resolution: {integrity: sha512-RwKDW2p3iyWn4UbaxpP2+VxwqXh0jpvdxsYpZ5j/MLLiQOfbsV5shpgQiw93+KMYQPcteeMQ289MaAFzs3G9pw==}
+
   ua-parser-js@0.7.35:
     resolution: {integrity: sha512-veRf7dawaj9xaWEu9HoTVn5Pggtc/qj+kqTOFvNiN1l0YdxwC1kvel57UCjThjGa3BHBihE8/UJAHI+uQHmd/g==}
 
-  ua-parser-js@1.0.39:
-    resolution: {integrity: sha512-k24RCVWlEcjkdOxYmVJgeD/0a1TiSpqLg+ZalVGV9lsnr4yqu0w7tX/x2xX6G4zpkgQnRf89lxuZ1wsbjXM8lw==}
+  ua-parser-js@2.0.3:
+    resolution: {integrity: sha512-LZyXZdNttONW8LjzEH3Z8+6TE7RfrEiJqDKyh0R11p/kxvrV2o9DrT2FGZO+KVNs3k+drcIQ6C3En6wLnzJGpw==}
     hasBin: true
 
   ufo@1.5.4:
@@ -9892,6 +9928,11 @@ packages:
 
   zod@3.23.8:
     resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+
+  zustand-sync-tabs@0.2.2:
+    resolution: {integrity: sha512-i2pQPm5SGBIq50v7tt6XFXZSR/iJNErOslS5HzMKJVd06+xDyBCXioxEap0Ke6u98+a49fU5QRqzypo21wMe9A==}
+    peerDependencies:
+      zustand: 3-5
 
   zustand@4.5.2:
     resolution: {integrity: sha512-2cN1tPkDVkwCy5ickKrI7vijSjPksFRfqS6237NzT0vqSsztTNnQdHw9mmN7uBdk3gceVXU0a+21jFzFzAc9+g==}
@@ -10922,7 +10963,7 @@ snapshots:
       '@celo/base': 6.1.0
       '@ethereumjs/util': 8.0.5
       '@types/elliptic': 6.4.18
-      '@types/node': 18.17.15
+      '@types/node': 18.19.65
       bignumber.js: 9.1.2
       elliptic: 6.5.4
       ethereum-cryptography: 1.2.0
@@ -13199,7 +13240,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.8': {}
 
-  '@getpara/core-components@0.1.0':
+  '@getpara/core-components@1.6.0':
     dependencies:
       '@stencil/core': 4.25.0
       color-blend: 4.0.0
@@ -13208,14 +13249,13 @@ snapshots:
       inputmask: 5.0.9
       qrcode-with-logos: 1.1.1
 
-  '@getpara/core-sdk@0.1.0':
+  '@getpara/core-sdk@1.6.0':
     dependencies:
       '@celo/utils': 8.0.0
       '@cosmjs/encoding': 0.32.4
-      '@getpara/user-management-client': 0.1.0
+      '@getpara/user-management-client': 1.6.0
       '@noble/hashes': 1.6.1
       base64url: 3.0.1
-      buffer: 6.0.3
       ethereumjs-util: 7.1.5
       libphonenumber-js: 1.11.2
       node-forge: 1.3.1
@@ -13223,19 +13263,19 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@getpara/cosmjs-v0-integration@0.1.0(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.32.4)(@cosmjs/proto-signing@0.31.3)':
+  '@getpara/cosmjs-v0-integration@1.6.0(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.32.4)(@cosmjs/proto-signing@0.31.3)':
     dependencies:
       '@cosmjs/amino': 0.31.3
       '@cosmjs/encoding': 0.32.4
       '@cosmjs/proto-signing': 0.31.3
-      '@getpara/core-sdk': 0.1.0
+      '@getpara/core-sdk': 1.6.0
     transitivePeerDependencies:
       - debug
 
-  '@getpara/react-common@0.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@getpara/react-common@1.6.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@getpara/react-components': 0.1.0
-      '@getpara/web-sdk': 0.1.0
+      '@getpara/react-components': 1.6.0
+      '@getpara/web-sdk': 1.6.0
       '@moonpay/moonpay-react': 1.8.3(react@18.2.0)
       '@ramp-network/ramp-instant-sdk': 4.0.7
       '@stripe/crypto': 0.0.4(@stripe/stripe-js@3.5.0)
@@ -13244,33 +13284,37 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       styled-components: 6.1.14(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      ua-parser-js: 2.0.3
     transitivePeerDependencies:
       - debug
+      - encoding
 
-  '@getpara/react-components@0.1.0':
+  '@getpara/react-components@1.6.0':
     dependencies:
-      '@getpara/core-components': 0.1.0
+      '@getpara/core-components': 1.6.0
 
-  '@getpara/react-sdk@0.1.0(@emotion/is-prop-valid@1.2.2)(@types/react@18.2.21)(immer@9.0.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@getpara/react-sdk@1.6.0(@emotion/is-prop-valid@1.2.2)(@types/react@18.2.21)(immer@9.0.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@getpara/react-common': 0.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@getpara/react-components': 0.1.0
-      '@getpara/web-sdk': 0.1.0
+      '@getpara/react-common': 1.6.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@getpara/react-components': 1.6.0
+      '@getpara/web-sdk': 1.6.0
+      '@tanstack/react-query': 5.61.4(react@18.2.0)
       date-fns: 3.6.0
-      detect-browser: 5.3.0
       framer-motion: 11.3.28(@emotion/is-prop-valid@1.2.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       libphonenumber-js: 1.11.2
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       styled-components: 6.1.14(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       zustand: 4.5.2(@types/react@18.2.21)(immer@9.0.21)(react@18.2.0)
+      zustand-sync-tabs: 0.2.2(zustand@4.5.2(@types/react@18.2.21)(immer@9.0.21)(react@18.2.0))
     transitivePeerDependencies:
       - '@emotion/is-prop-valid'
       - '@types/react'
       - debug
+      - encoding
       - immer
 
-  '@getpara/user-management-client@0.1.0':
+  '@getpara/user-management-client@1.6.0':
     dependencies:
       axios: 1.6.8
       libphonenumber-js: 1.11.2
@@ -13278,18 +13322,20 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@getpara/web-sdk@0.1.0':
+  '@getpara/web-sdk@1.6.0':
     dependencies:
-      '@getpara/core-sdk': 0.1.0
-      '@getpara/user-management-client': 0.1.0
+      '@getpara/core-sdk': 1.6.0
+      '@getpara/user-management-client': 1.6.0
+      '@sentry/browser': 9.9.0
       assert: 2.1.0
       base64url: 3.0.1
       buffer: 6.0.3
       cbor-web: 8.1.0
       node-forge: 1.3.1
-      ua-parser-js: 1.0.39
+      ua-parser-js: 2.0.3
     transitivePeerDependencies:
       - debug
+      - encoding
 
   '@graz-sh/style-guide@4.0.1(@types/eslint@8.40.0)(eslint@8.49.0)(prettier@3.0.3)(tailwindcss@3.3.3)(typescript@5.2.2)':
     dependencies:
@@ -14700,6 +14746,34 @@ snapshots:
       '@noble/curves': 1.3.0
       '@noble/hashes': 1.3.3
 
+  '@sentry-internal/browser-utils@9.9.0':
+    dependencies:
+      '@sentry/core': 9.9.0
+
+  '@sentry-internal/feedback@9.9.0':
+    dependencies:
+      '@sentry/core': 9.9.0
+
+  '@sentry-internal/replay-canvas@9.9.0':
+    dependencies:
+      '@sentry-internal/replay': 9.9.0
+      '@sentry/core': 9.9.0
+
+  '@sentry-internal/replay@9.9.0':
+    dependencies:
+      '@sentry-internal/browser-utils': 9.9.0
+      '@sentry/core': 9.9.0
+
+  '@sentry/browser@9.9.0':
+    dependencies:
+      '@sentry-internal/browser-utils': 9.9.0
+      '@sentry-internal/feedback': 9.9.0
+      '@sentry-internal/replay': 9.9.0
+      '@sentry-internal/replay-canvas': 9.9.0
+      '@sentry/core': 9.9.0
+
+  '@sentry/core@9.9.0': {}
+
   '@sideway/address@4.1.4':
     dependencies:
       '@hapi/hoek': 9.3.0
@@ -14967,16 +15041,16 @@ snapshots:
   '@types/body-parser@1.19.2':
     dependencies:
       '@types/connect': 3.4.35
-      '@types/node': 18.17.15
+      '@types/node': 18.19.65
 
   '@types/bonjour@3.5.10':
     dependencies:
-      '@types/node': 18.17.15
+      '@types/node': 18.19.65
 
   '@types/connect-history-api-fallback@1.5.0':
     dependencies:
       '@types/express-serve-static-core': 4.17.35
-      '@types/node': 18.17.15
+      '@types/node': 18.19.65
 
   '@types/connect@3.4.35':
     dependencies:
@@ -15007,11 +15081,11 @@ snapshots:
   '@types/ethereumjs-util@5.2.0':
     dependencies:
       '@types/bn.js': 5.1.5
-      '@types/node': 18.17.15
+      '@types/node': 18.19.65
 
   '@types/express-serve-static-core@4.17.35':
     dependencies:
-      '@types/node': 18.17.15
+      '@types/node': 18.19.65
       '@types/qs': 6.9.7
       '@types/range-parser': 1.2.4
       '@types/send': 0.17.1
@@ -15033,7 +15107,7 @@ snapshots:
 
   '@types/http-proxy@1.17.11':
     dependencies:
-      '@types/node': 18.17.15
+      '@types/node': 18.19.65
 
   '@types/istanbul-lib-coverage@2.0.4': {}
 
@@ -15070,6 +15144,11 @@ snapshots:
   '@types/mime@3.0.1': {}
 
   '@types/ms@0.7.31': {}
+
+  '@types/node-fetch@2.6.12':
+    dependencies:
+      '@types/node': 18.19.65
+      form-data: 4.0.1
 
   '@types/node@10.12.18': {}
 
@@ -15132,7 +15211,7 @@ snapshots:
 
   '@types/sax@1.2.4':
     dependencies:
-      '@types/node': 18.17.15
+      '@types/node': 18.19.65
 
   '@types/scheduler@0.16.3': {}
 
@@ -15154,11 +15233,11 @@ snapshots:
   '@types/serve-static@1.15.1':
     dependencies:
       '@types/mime': 3.0.1
-      '@types/node': 18.17.15
+      '@types/node': 18.19.65
 
   '@types/sockjs@0.3.33':
     dependencies:
-      '@types/node': 18.17.15
+      '@types/node': 18.19.65
 
   '@types/stylis@4.2.5': {}
 
@@ -15168,7 +15247,7 @@ snapshots:
 
   '@types/ws@8.5.4':
     dependencies:
-      '@types/node': 18.17.15
+      '@types/node': 18.19.65
 
   '@types/yargs-parser@21.0.0': {}
 
@@ -16115,7 +16194,7 @@ snapshots:
 
   bip39@3.1.0:
     dependencies:
-      '@noble/hashes': 1.4.0
+      '@noble/hashes': 1.6.1
 
   blakejs@1.2.1: {}
 
@@ -17073,6 +17152,8 @@ snapshots:
       repeat-string: 1.6.1
 
   detect-browser@5.3.0: {}
+
+  detect-europe-js@0.1.2: {}
 
   detect-libc@1.0.3: {}
 
@@ -18741,6 +18822,8 @@ snapshots:
     dependencies:
       call-bind: 1.0.7
 
+  is-standalone-pwa@0.1.1: {}
+
   is-stream@2.0.1: {}
 
   is-stream@3.0.0: {}
@@ -18831,7 +18914,7 @@ snapshots:
   jest-util@29.5.0:
     dependencies:
       '@jest/types': 29.5.0
-      '@types/node': 18.17.15
+      '@types/node': 18.19.65
       chalk: 4.1.2
       ci-info: 3.8.0
       graceful-fs: 4.2.11
@@ -19190,7 +19273,7 @@ snapshots:
 
   miller-rabin@4.0.1:
     dependencies:
-      bn.js: 4.12.0
+      bn.js: 4.12.1
       brorand: 1.1.0
 
   mime-db@1.33.0: {}
@@ -21665,9 +21748,19 @@ snapshots:
 
   typescript@5.2.2: {}
 
+  ua-is-frozen@0.1.2: {}
+
   ua-parser-js@0.7.35: {}
 
-  ua-parser-js@1.0.39: {}
+  ua-parser-js@2.0.3:
+    dependencies:
+      '@types/node-fetch': 2.6.12
+      detect-europe-js: 0.1.2
+      is-standalone-pwa: 0.1.1
+      node-fetch: 2.7.0
+      ua-is-frozen: 0.1.2
+    transitivePeerDependencies:
+      - encoding
 
   ufo@1.5.4: {}
 
@@ -22362,6 +22455,10 @@ snapshots:
   zod@3.21.4: {}
 
   zod@3.23.8: {}
+
+  zustand-sync-tabs@0.2.2(zustand@4.5.2(@types/react@18.2.21)(immer@9.0.21)(react@18.2.0)):
+    dependencies:
+      zustand: 4.5.2(@types/react@18.2.21)(immer@9.0.21)(react@18.2.0)
 
   zustand@4.5.2(@types/react@18.2.21)(immer@9.0.21)(react@18.2.0):
     dependencies:
