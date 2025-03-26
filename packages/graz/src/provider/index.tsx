@@ -1,5 +1,4 @@
-import type { QueryClientProviderProps } from "@tanstack/react-query";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import type { PropsWithChildren } from "react";
 import { type FC, useEffect } from "react";
 
 import type { ConfigureGrazArgs } from "../actions/configure";
@@ -7,17 +6,12 @@ import { configureGraz } from "../actions/configure";
 import { ClientOnly } from "./client-only";
 import { GrazEvents } from "./events";
 
-const queryClient = new QueryClient({
-  //
-});
-
-export type GrazProviderProps = Partial<QueryClientProviderProps> & {
+export type GrazProviderProps = {
   grazOptions: ConfigureGrazArgs;
-};
+} & PropsWithChildren;
 
 /**
- * Provider component which extends `@tanstack/react-query`'s {@link QueryClientProvider} with built-in query client
- * and various `graz` side effects
+ * Provider component
  *
  * @example
  * ```tsx
@@ -33,17 +27,15 @@ export type GrazProviderProps = Partial<QueryClientProviderProps> & {
  *
  * @see https://tanstack.com/query
  */
-export const GrazProvider: FC<GrazProviderProps> = ({ children, grazOptions, ...props }) => {
+export const GrazProvider: FC<GrazProviderProps> = ({ children, grazOptions }) => {
   useEffect(() => {
     configureGraz(grazOptions);
   }, [grazOptions]);
 
   return (
-    <QueryClientProvider key="graz-provider" client={queryClient} {...props}>
-      <ClientOnly>
-        {children}
-        <GrazEvents />
-      </ClientOnly>
-    </QueryClientProvider>
+    <ClientOnly>
+      {children}
+      <GrazEvents />
+    </ClientOnly>
   );
 };
