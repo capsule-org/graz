@@ -3,7 +3,6 @@ import { grazSessionDefaultValues, useGrazInternalStore, useGrazSessionStore } f
 import type { Wallet } from "../../types/wallet";
 import { WALLET_TYPES, WalletType } from "../../types/wallet";
 import { getCapsule } from "./capsule";
-import { getCapsuleEmbedded } from "./capsuleEmbedded";
 import { getCompass } from "./compass";
 import { getCosmiframe } from "./cosmiframe";
 import { getMetamaskSnapCosmos } from "./cosmos-metamask-snap";
@@ -13,6 +12,7 @@ import { getKeplr } from "./keplr";
 import { getLeap } from "./leap";
 import { getMetamaskSnapLeap } from "./leap-metamask-snap/leap";
 import { getOkx } from "./okx";
+import { getPara } from "./para";
 import { getStation } from "./station";
 import { getVectis } from "./vectis";
 import { getWalletConnect } from "./wallet-connect";
@@ -114,8 +114,8 @@ export const getWallet = (type: WalletType = useGrazInternalStore.getState().wal
       case WalletType.OKX: {
         return getOkx();
       }
-      case WalletType.CAPSULE_EMBEDDED: {
-        return getCapsuleEmbedded();
+      case WalletType.PARA: {
+        return getPara();
       }
 
       default: {
@@ -139,8 +139,8 @@ export const isCapsule = (type: WalletType): boolean => {
   return type === WalletType.CAPSULE;
 };
 
-export const isCapsuleEmbedded = (type: WalletType): boolean => {
-  return type === WalletType.CAPSULE_EMBEDDED;
+export const isPara = (type: WalletType): boolean => {
+  return type === WalletType.PARA;
 };
 
 export const isWalletConnect = (type: WalletType): boolean => {

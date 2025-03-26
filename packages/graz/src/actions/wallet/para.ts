@@ -1,38 +1,39 @@
-import { type AminoSignResponse, StdSignature } from "@cosmjs/amino";
+import type { StdSignature } from "@cosmjs/amino";
+import { type AminoSignResponse } from "@cosmjs/amino";
 import { fromBech32 } from "@cosmjs/encoding";
 import type { DirectSignResponse } from "@cosmjs/proto-signing";
+import { ParaAminoSigner, ParaProtoSigner } from "@getpara/cosmjs-v0-integration";
+import { WalletType as ParaWalletType } from "@getpara/react-sdk";
 import type { Keplr } from "@keplr-wallet/types";
 
-import { useGrazInternalStore, useGrazSessionStore } from "../../store";
-import { WalletType, type Key, type SignAminoParams, type SignDirectParams, type Wallet } from "../../types/wallet";
-import { CapsuleAminoSigner, CapsuleProtoSigner } from "@usecapsule/cosmjs-v0-integration";
-import { getChainInfo } from "../chains";
-import { WalletType as CapsuleWalletType } from "@usecapsule/react-sdk";
 import { RECONNECT_SESSION_KEY } from "../../constant";
+import { useGrazInternalStore, useGrazSessionStore } from "../../store";
+import { type Key, type SignAminoParams, type SignDirectParams, type Wallet, WalletType } from "../../types/wallet";
+import { getChainInfo } from "../chains";
 
-export const getCapsuleEmbedded = (): Wallet => {
+export const getPara = (): Wallet => {
   // eslint-disable-next-line @typescript-eslint/require-await
   const enable = async (_chainId: string | string[]) => {
     const chainId = typeof _chainId === "string" ? [_chainId] : _chainId;
-    useGrazInternalStore.setState({ capsuleEmbeddedState: { chainId } });
+    useGrazInternalStore.setState({ paraState: { chainId } });
   };
 
   const getWallet = () => {
-    const client = useGrazInternalStore.getState().capsuleEmbedded;
-    if (!client) throw new Error("Capsule client is not initialized");
+    const client = useGrazInternalStore.getState().para;
+    if (!client) throw new Error("Para client is not initialized");
 
-    const wallet = client.findWallet(undefined, undefined, { type: [CapsuleWalletType.COSMOS] });
-    if (!wallet?.address) throw new Error("No valid Capsule wallet found");
+    const wallet = client.findWallet(undefined, undefined, { type: [ParaWalletType.COSMOS] });
+    if (!wallet?.address) throw new Error("No valid Para wallet found");
 
     return wallet;
   };
 
   const onAfterLoginSuccessful = async () => {
-    const client = useGrazInternalStore.getState().capsuleEmbedded;
+    const client = useGrazInternalStore.getState().para;
     const { chains } = useGrazInternalStore.getState();
-    if (!client) throw new Error("Capsule client is not initialized");
+    if (!client) throw new Error("Para client is not initialized");
     if (!chains) throw new Error("Chains are not set");
-    const chainIds = useGrazInternalStore.getState().capsuleEmbeddedState?.chainId;
+    const chainIds = useGrazInternalStore.getState().paraState?.chainId;
     if (!chainIds) throw new Error("Chain ids are not set");
     const resultAccounts = Object.fromEntries(
       await Promise.all(
@@ -58,9 +59,9 @@ export const getCapsuleEmbedded = (): Wallet => {
     }));
 
     useGrazInternalStore.setState({
-      walletType: WalletType.CAPSULE_EMBEDDED,
+      walletType: WalletType.PARA,
       _reconnect: false,
-      _reconnectConnector: WalletType.CAPSULE_EMBEDDED,
+      _reconnectConnector: WalletType.PARA,
     });
     useGrazSessionStore.setState({
       status: "connected",
@@ -69,18 +70,18 @@ export const getCapsuleEmbedded = (): Wallet => {
   };
 
   const getKey = async (chainId: string) => {
-    const client = useGrazInternalStore.getState().capsuleEmbedded;
-    if (!client) throw new Error("Capsule client is not initialized");
+    const client = useGrazInternalStore.getState().para;
+    if (!client) throw new Error("Para client is not initialized");
 
-    const capsuleSigner = new CapsuleProtoSigner(
+    const paraSigner = new ParaProtoSigner(
       client,
       getChainInfo({ chainId })?.bech32Config?.bech32PrefixAccAddr,
       getWallet().id,
     );
 
-    const account = (await capsuleSigner.getAccounts())[0];
+    const account = (await paraSigner.getAccounts())[0];
 
-    if (!account) throw new Error("No Capsule account connected");
+    if (!account) throw new Error("No Para account connected");
 
     const username = client.getEmail() ?? client.getPhoneNumber() ?? client.getFarcasterUsername();
 
@@ -96,21 +97,21 @@ export const getCapsuleEmbedded = (): Wallet => {
   };
 
   const getOfflineSigner = (chainId: string) => {
-    return getOfflineSignerAmino(chainId);
+    return getOfflineSignerOnlyAmino(chainId);
   };
 
-  const getOfflineSignerAmino = (chainId: string) => {
-    const client = useGrazInternalStore.getState().capsuleEmbedded;
-    if (!client) throw new Error("Capsule client is not initialized");
+  const getOfflineSignerOnlyAmino = (chainId: string) => {
+    const client = useGrazInternalStore.getState().para;
+    if (!client) throw new Error("Para client is not initialized");
 
-    return new CapsuleAminoSigner(client, getChainInfo({ chainId })?.bech32Config?.bech32PrefixAccAddr, getWallet().id);
+    return new ParaAminoSigner(client, getChainInfo({ chainId })?.bech32Config?.bech32PrefixAccAddr, getWallet().id);
   };
 
   const getOfflineSignerDirect = (chainId: string) => {
-    const client = useGrazInternalStore.getState().capsuleEmbedded;
-    if (!client) throw new Error("Capsule client is not initialized");
+    const client = useGrazInternalStore.getState().para;
+    if (!client) throw new Error("Para client is not initialized");
 
-    return new CapsuleProtoSigner(client, getChainInfo({ chainId })?.bech32Config?.bech32PrefixAccAddr, getWallet().id);
+    return new ParaProtoSigner(client, getChainInfo({ chainId })?.bech32Config?.bech32PrefixAccAddr, getWallet().id);
   };
 
   // eslint-disable-next-line @typescript-eslint/require-await
@@ -120,11 +121,11 @@ export const getCapsuleEmbedded = (): Wallet => {
 
   const signDirect = async (...args: SignDirectParams): Promise<DirectSignResponse> => {
     const [chainId, _, signDoc] = args;
-    const capsuleSigner = getOfflineSignerDirect(chainId);
+    const paraSigner = getOfflineSignerDirect(chainId);
 
     const account = await getKey(chainId);
 
-    return capsuleSigner.signDirect(account.bech32Address, {
+    return paraSigner.signDirect(account.bech32Address, {
       bodyBytes: signDoc.bodyBytes!,
       authInfoBytes: signDoc.authInfoBytes!,
       chainId: signDoc.chainId!,
@@ -134,11 +135,11 @@ export const getCapsuleEmbedded = (): Wallet => {
 
   const signAmino = async (...args: SignAminoParams): Promise<AminoSignResponse> => {
     const [chainId, _, signDoc] = args;
-    const capsuleSigner = getOfflineSignerAmino(chainId);
+    const paraSigner = getOfflineSignerOnlyAmino(chainId);
 
     const account = await getKey(chainId);
 
-    return capsuleSigner.signAmino(account.bech32Address, signDoc);
+    return paraSigner.signAmino(account.bech32Address, signDoc);
   };
 
   const getDataForADR36 = (_data: string | Uint8Array) => {
@@ -176,8 +177,8 @@ export const getCapsuleEmbedded = (): Wallet => {
   };
 
   const signArbitrary = async (chainId: string, signer: string, _data: string | Uint8Array): Promise<StdSignature> => {
-    const client = useGrazInternalStore.getState().capsuleEmbedded;
-    if (!client) throw new Error("Capsule client is not initialized");
+    const client = useGrazInternalStore.getState().para;
+    if (!client) throw new Error("Para client is not initialized");
 
     const [data] = getDataForADR36(_data);
     const signDoc = getADR36SignDoc(signer, data);
@@ -185,7 +186,7 @@ export const getCapsuleEmbedded = (): Wallet => {
   };
 
   const experimentalSuggestChain = async (..._args: Parameters<Keplr["experimentalSuggestChain"]>) => {
-    await Promise.reject(new Error("Capsule does not support experimentalSuggestChain"));
+    await Promise.reject(new Error("Para does not support experimentalSuggestChain"));
   };
 
   return {
@@ -194,13 +195,11 @@ export const getCapsuleEmbedded = (): Wallet => {
     onAfterLoginSuccessful,
     getKey,
     getOfflineSignerAuto,
-    getOfflineSignerDirect,
     signDirect,
     signAmino,
     signArbitrary,
     experimentalSuggestChain,
-    // @ts-expect-error - CapsuleAminoSigner | OfflineDirectSigner
     getOfflineSigner,
-    getOfflineSignerAmino,
+    getOfflineSignerOnlyAmino,
   };
 };
