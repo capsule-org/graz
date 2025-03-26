@@ -1,6 +1,6 @@
+import type ParaWeb from "@getpara/react-sdk";
 import type { ChainInfo, Keplr } from "@keplr-wallet/types";
 import type { CapsuleProvider } from "@leapwallet/cosmos-social-login-capsule-provider";
-import CapsuleWeb from "@usecapsule/react-sdk";
 import type { WalletConnectModalConfig } from "@walletconnect/modal";
 import type { ISignClient, SignClientTypes } from "@walletconnect/types";
 import { create } from "zustand";
@@ -61,8 +61,8 @@ export interface GrazInternalStore {
   recentChainIds: string[] | null;
   capsuleConfig: CapsuleConfig | null;
   capsuleState: CapsuleState | null;
-  capsuleEmbeddedState: CapsuleEmbeddedState | null;
-  capsuleEmbedded: CapsuleWeb | null;
+  paraState: CapsuleEmbeddedState | null;
+  para: ParaWeb | null;
   chains: ChainInfo[] | null;
   chainsConfig: Record<string, ChainConfig> | null;
   iframeOptions: IframeOptions | null;
@@ -86,7 +86,6 @@ export interface GrazSessionStore {
   status: "connected" | "connecting" | "reconnecting" | "disconnected";
   wcSignClients: Map<WalletType, ISignClient>;
   capsuleClient: CapsuleProvider | null;
-  capsuleEmbeddedClient: CapsuleWeb | null;
 }
 
 export type GrazSessionPersistedStore = Pick<GrazSessionStore, "accounts" | "activeChainIds">;
@@ -103,8 +102,8 @@ export const grazInternalDefaultValues: GrazInternalStore = {
   chainsConfig: null,
   capsuleConfig: null,
   capsuleState: null,
-  capsuleEmbeddedState: null,
-  capsuleEmbedded: null,
+  paraState: null,
+  para: null,
   multiChainFetchConcurrency: 3,
   walletType: WalletType.KEPLR,
   walletConnect: {
@@ -124,7 +123,6 @@ export const grazSessionDefaultValues: GrazSessionStore = {
   status: "disconnected",
   wcSignClients: new Map(),
   capsuleClient: null,
-  capsuleEmbeddedClient: null,
 };
 
 const sessionOptions: PersistOptions<GrazSessionStore, GrazSessionPersistedStore> = {

@@ -21,8 +21,7 @@ export enum WalletType {
   STATION = "station",
   XDEFI = "xdefi",
   CAPSULE = "capsule",
-  // eslint-disable-next-line @typescript-eslint/naming-convention
-  CAPSULE_EMBEDDED = "capsuleEmbedded",
+  PARA = "para",
   COSMIFRAME = "cosmiframe",
   COMPASS = "compass",
   INITIA = "initia",
@@ -43,6 +42,7 @@ export const WALLET_TYPES = [
   WalletType.STATION,
   WalletType.XDEFI,
   WalletType.CAPSULE,
+  WalletType.PARA,
   WalletType.METAMASK_SNAP_COSMOS,
   WalletType.COSMIFRAME,
   WalletType.COMPASS,
