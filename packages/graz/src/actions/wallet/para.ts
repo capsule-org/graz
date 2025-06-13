@@ -3,7 +3,6 @@ import { type AminoSignResponse } from "@cosmjs/amino";
 import { fromBech32 } from "@cosmjs/encoding";
 import type { DirectSignResponse } from "@cosmjs/proto-signing";
 import { ParaAminoSigner, ParaProtoSigner } from "@getpara/cosmjs-v0-integration";
-import { WalletType as ParaWalletType } from "@getpara/react-sdk";
 import type { Keplr } from "@keplr-wallet/types";
 
 import { RECONNECT_SESSION_KEY } from "../../constant";
@@ -22,7 +21,7 @@ export const getPara = (): Wallet => {
     const client = useGrazInternalStore.getState().para;
     if (!client) throw new Error("Para client is not initialized");
 
-    const wallet = client.findWallet(undefined, undefined, { type: [ParaWalletType.COSMOS] });
+    const wallet = client.findWallet(undefined, undefined, { type: ["COSMOS"] });
     if (!wallet?.address) throw new Error("No valid Para wallet found");
 
     return wallet;
