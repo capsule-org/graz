@@ -91,10 +91,10 @@ importers:
         specifier: 0.1.0
         version: 0.1.0(@cosmjs/amino@0.31.3)(@cosmjs/proto-signing@0.31.3)
       '@getpara/cosmjs-v0-integration':
-        specifier: 2.0.0-alpha.21
+        specifier: ^2.0.0-alpha.21
         version: 2.0.0-alpha.21(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.32.4)(@cosmjs/proto-signing@0.31.3)(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       '@getpara/react-sdk':
-        specifier: 2.0.0-alpha.21
+        specifier: ^2.0.0-alpha.21
         version: 2.0.0-alpha.21(4a27a3c2f512354f170d36436ba90f62)
       '@keplr-wallet/cosmos':
         specifier: 0.12.156
@@ -1983,9 +1983,6 @@ packages:
     resolution: {integrity: sha512-2I0gnIVPtfnMw9ee9h1dJG7tp81+8Ob3OJb3Mv37rx5L40/b0i7djjCVvGOVqc9AEIQyvyu1i6ypKdFw8R8gQw==}
     engines: {node: ^14.21.3 || >=16}
 
-  '@noble/curves@1.1.0':
-    resolution: {integrity: sha512-091oBExgENk/kGj3AZmtBDMpxQPDtxQABR2B9lb1JbVTs6ytdzZNwvhxQ4MWasRNEzlbEH8jCWFCwhF/Obj5AA==}
-
   '@noble/curves@1.3.0':
     resolution: {integrity: sha512-t01iSXPuN+Eqzb4eBX0S5oubSqXbK/xXa1Ne18Hj8f9pStxztHCE2gfboSp/dZRLSqfuLpRK2nDXDK+W9puocA==}
 
@@ -2010,10 +2007,6 @@ packages:
 
   '@noble/hashes@1.2.0':
     resolution: {integrity: sha512-FZfhjEDbT5GRswV3C6uvLPHMiVD6lQBmpoX5+eSiPaMTXte/IKqI5dykDxzZB/WBeK/CDuQRBWarPdi3FNY2zQ==}
-
-  '@noble/hashes@1.3.1':
-    resolution: {integrity: sha512-EbqwksQwz9xDRGfDST86whPBgM65E0OH/pCgqW0GBVzO22bNE+NuIbeTb714+IfSjU3aRk47EUvXIb5bTsenKA==}
-    engines: {node: '>= 16'}
 
   '@noble/hashes@1.3.3':
     resolution: {integrity: sha512-V7/fPHgl+jsVPXqqeOzT8egNj2iBIVt+ECeMMG8TdcnTikP3oaBtUVqpT/gYCR68aEBJSF+XbYUxStjbFMqIIA==}
@@ -2304,9 +2297,6 @@ packages:
   '@scure/bip32@1.1.5':
     resolution: {integrity: sha512-XyNh1rB0SkEqd3tXcXMi+Xe1fvg+kUIcoRIEujP1Jgv7DqW2r9lg3Ah0NkFaCs9sTkQAQA8kw7xiRXzENi9Rtw==}
 
-  '@scure/bip32@1.3.1':
-    resolution: {integrity: sha512-osvveYtyzdEVbt3OfwwXFr4P2iVBL5u1Q3q4ONBfDY/UpOuXmOlbgwc1xECEboY8wIays8Yt6onaWMUdUbfl0A==}
-
   '@scure/bip32@1.4.0':
     resolution: {integrity: sha512-sVUpc0Vq3tXCkDGYVWGIZTRfnvu8LoTDaev7vbwh0omSvVORONr960MQWdKqJDCReIEmTj3PAr73O3aoxz7OPg==}
 
@@ -2318,9 +2308,6 @@ packages:
 
   '@scure/bip39@1.1.1':
     resolution: {integrity: sha512-t+wDck2rVkh65Hmv280fYdVdY25J9YeEUIgn2LG1WM6gxFkGzcksoDiUkWVpVp3Oex9xGC68JU2dSbUfwZ2jPg==}
-
-  '@scure/bip39@1.2.1':
-    resolution: {integrity: sha512-Z3/Fsz1yr904dduJD0NpiyRHhRYHdcnyh73FZWiV+/qhWi83wNJ3NWolYqCEN+ZWsUz2TWwajJggcRE9r1zUYg==}
 
   '@scure/bip39@1.3.0':
     resolution: {integrity: sha512-disdg7gHuTDZtY+ZdkmLpPCk7fxZSu3gBiEGuoC1XYxv9cGx3Z6cpTggCgW6odSOOIXCiDjuGejW+aJKCY/pIQ==}
@@ -3478,9 +3465,6 @@ packages:
 
   axios@0.27.2:
     resolution: {integrity: sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==}
-
-  axios@1.6.8:
-    resolution: {integrity: sha512-v/ZHtJDU39mDpyBoFVkETcd/uNdxrWRrg3bKpOKzXFA6Bvqopts6ALSMU3y6ijYxbw2B+wPrIv46egTzJXCLGQ==}
 
   axios@1.9.0:
     resolution: {integrity: sha512-re4CqKTJaURpzbLHtIi6XpDv20/CnpXOtjRY5/CU32L8gU8ek9UIivcfvSWvmKEngmVbrUtPpdDwWDWL7DNHvg==}
@@ -4915,9 +4899,6 @@ packages:
 
   ethereum-cryptography@1.2.0:
     resolution: {integrity: sha512-6yFQC9b5ug6/17CQpCyE3k9eKBMdhyVjzUy1WkiuY/E4vj/SXDBbCw8QEIaXqf0Mf2SnY6RmpDcwlUmBSS0EJw==}
-
-  ethereum-cryptography@2.1.2:
-    resolution: {integrity: sha512-Z5Ba0T0ImZ8fqXrJbpHcbpAvIswRte2wGNR/KePnu8GbbvgJ47lMxT/ZZPG6i9Jaht4azPDop4HaM00J0J59ug==}
 
   ethereum-cryptography@2.2.1:
     resolution: {integrity: sha512-r/W8lkHSiTLxUxW8Rf3u4HGB0xQweG2RyETjywylKZSzLWoWAijRz8WCuOtJ6wah+avllXBqZuk29HCCvhEIRg==}
@@ -11228,7 +11209,7 @@ snapshots:
   '@docusaurus/theme-translations@2.4.3':
     dependencies:
       fs-extra: 10.1.0
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@docusaurus/types@2.4.3(esbuild@0.18.4)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
     dependencies:
@@ -11411,7 +11392,7 @@ snapshots:
       '@ethereumjs/common': 3.2.0
       '@ethereumjs/rlp': 4.0.1
       '@ethereumjs/util': 8.1.0
-      ethereum-cryptography: 2.1.2
+      ethereum-cryptography: 2.2.1
 
   '@ethereumjs/util@8.0.5':
     dependencies:
@@ -11422,7 +11403,7 @@ snapshots:
   '@ethereumjs/util@8.1.0':
     dependencies:
       '@ethereumjs/rlp': 4.0.1
-      ethereum-cryptography: 2.1.2
+      ethereum-cryptography: 2.2.1
       micro-ftch: 0.3.1
 
   '@ethereumjs/util@9.1.0':
@@ -12549,7 +12530,7 @@ snapshots:
       '@motionone/easing': 10.15.1
       '@motionone/types': 10.15.1
       '@motionone/utils': 10.15.1
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@motionone/dom@10.16.2':
     dependencies:
@@ -12558,23 +12539,23 @@ snapshots:
       '@motionone/types': 10.15.1
       '@motionone/utils': 10.15.1
       hey-listen: 1.0.8
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@motionone/easing@10.15.1':
     dependencies:
       '@motionone/utils': 10.15.1
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@motionone/generators@10.15.1':
     dependencies:
       '@motionone/types': 10.15.1
       '@motionone/utils': 10.15.1
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@motionone/svelte@10.16.2':
     dependencies:
       '@motionone/dom': 10.16.2
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@motionone/types@10.15.1': {}
 
@@ -12582,12 +12563,12 @@ snapshots:
     dependencies:
       '@motionone/types': 10.15.1
       hey-listen: 1.0.8
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@motionone/vue@10.16.2':
     dependencies:
       '@motionone/dom': 10.16.2
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@next/eslint-plugin-next@13.4.19':
     dependencies:
@@ -12603,10 +12584,6 @@ snapshots:
   '@noble/ciphers@1.2.1': {}
 
   '@noble/ciphers@1.3.0': {}
-
-  '@noble/curves@1.1.0':
-    dependencies:
-      '@noble/hashes': 1.3.1
 
   '@noble/curves@1.3.0':
     dependencies:
@@ -12633,8 +12610,6 @@ snapshots:
       '@noble/hashes': 1.8.0
 
   '@noble/hashes@1.2.0': {}
-
-  '@noble/hashes@1.3.1': {}
 
   '@noble/hashes@1.3.3': {}
 
@@ -12743,7 +12718,7 @@ snapshots:
       is-glob: 4.0.3
       open: 9.1.0
       picocolors: 1.0.0
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   '@polka/url@1.0.0-next.21': {}
 
@@ -13100,12 +13075,6 @@ snapshots:
       '@noble/secp256k1': 1.7.1
       '@scure/base': 1.1.9
 
-  '@scure/bip32@1.3.1':
-    dependencies:
-      '@noble/curves': 1.1.0
-      '@noble/hashes': 1.3.3
-      '@scure/base': 1.1.9
-
   '@scure/bip32@1.4.0':
     dependencies:
       '@noble/curves': 1.4.2
@@ -13127,11 +13096,6 @@ snapshots:
   '@scure/bip39@1.1.1':
     dependencies:
       '@noble/hashes': 1.2.0
-      '@scure/base': 1.1.9
-
-  '@scure/bip39@1.2.1':
-    dependencies:
-      '@noble/hashes': 1.3.3
       '@scure/base': 1.1.9
 
   '@scure/bip39@1.3.0':
@@ -14067,7 +14031,7 @@ snapshots:
 
   '@usecapsule/user-management-client@1.18.0':
     dependencies:
-      axios: 1.6.8
+      axios: 1.9.0
       qs: 6.12.1
     transitivePeerDependencies:
       - debug
@@ -15197,14 +15161,6 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  axios@1.6.8:
-    dependencies:
-      follow-redirects: 1.15.9
-      form-data: 4.0.1
-      proxy-from-env: 1.1.0
-    transitivePeerDependencies:
-      - debug
-
   axios@1.9.0:
     dependencies:
       follow-redirects: 1.15.9
@@ -15373,7 +15329,7 @@ snapshots:
 
   bip39@3.1.0:
     dependencies:
-      '@noble/hashes': 1.6.1
+      '@noble/hashes': 1.8.0
 
   blakejs@1.2.1: {}
 
@@ -15625,7 +15581,7 @@ snapshots:
   camel-case@4.1.2:
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   camelcase-css@2.0.1: {}
 
@@ -16446,7 +16402,7 @@ snapshots:
   dot-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   dot-prop@5.3.0:
     dependencies:
@@ -16480,7 +16436,7 @@ snapshots:
 
   elliptic@6.5.4:
     dependencies:
-      bn.js: 4.12.0
+      bn.js: 4.12.1
       brorand: 1.1.0
       hash.js: 1.1.7
       hmac-drbg: 1.0.1
@@ -17038,13 +16994,6 @@ snapshots:
       '@noble/secp256k1': 1.7.1
       '@scure/bip32': 1.1.5
       '@scure/bip39': 1.1.1
-
-  ethereum-cryptography@2.1.2:
-    dependencies:
-      '@noble/curves': 1.1.0
-      '@noble/hashes': 1.3.1
-      '@scure/bip32': 1.3.1
-      '@scure/bip39': 1.2.1
 
   ethereum-cryptography@2.2.1:
     dependencies:
@@ -18594,7 +18543,7 @@ snapshots:
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   lowercase-keys@1.0.1: {}
 
@@ -18973,7 +18922,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   node-addon-api@2.0.2: {}
 
@@ -19255,7 +19204,7 @@ snapshots:
   param-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   parent-module@1.0.1:
     dependencies:
@@ -19311,7 +19260,7 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   path-exists@3.0.0: {}
 
@@ -20508,7 +20457,7 @@ snapshots:
 
   rxjs@7.8.1:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   safe-array-concat@1.0.1:
     dependencies:
@@ -21090,7 +21039,7 @@ snapshots:
   synckit@0.8.5:
     dependencies:
       '@pkgr/utils': 2.4.2
-      tslib: 2.6.2
+      tslib: 2.8.1
 
   system-architecture@0.1.0: {}
 
