@@ -91,10 +91,10 @@ importers:
         specifier: 0.1.0
         version: 0.1.0(@cosmjs/amino@0.31.3)(@cosmjs/proto-signing@0.31.3)
       '@getpara/cosmjs-v0-integration':
-        specifier: ^2.0.0-alpha.21
+        specifier: '>=2.0.0-alpha.21'
         version: 2.0.0-alpha.21(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.32.4)(@cosmjs/proto-signing@0.31.3)(bufferutil@4.0.8)(utf-8-validate@5.0.10)
       '@getpara/react-sdk':
-        specifier: ^2.0.0-alpha.21
+        specifier: '>=2.0.0-alpha.21'
         version: 2.0.0-alpha.21(4a27a3c2f512354f170d36436ba90f62)
       '@keplr-wallet/cosmos':
         specifier: 0.12.156
