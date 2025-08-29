@@ -91,11 +91,11 @@ importers:
         specifier: 0.1.0
         version: 0.1.0(@cosmjs/amino@0.31.3)(@cosmjs/proto-signing@0.31.3)
       '@getpara/cosmjs-v0-integration':
-        specifier: 2.0.0-alpha.50
-        version: 2.0.0-alpha.50(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.32.4)(@cosmjs/proto-signing@0.31.3)(@cosmjs/stargate@0.31.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))
+        specifier: 2.0.0-alpha.51
+        version: 2.0.0-alpha.51(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.32.4)(@cosmjs/proto-signing@0.31.3)(@cosmjs/stargate@0.31.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))
       '@getpara/react-sdk':
-        specifier: 2.0.0-alpha.50
-        version: 2.0.0-alpha.50(88d013255ddedf3b9d16f60cd0bc25e4)
+        specifier: 2.0.0-alpha.51
+        version: 2.0.0-alpha.51(88d013255ddedf3b9d16f60cd0bc25e4)
       '@keplr-wallet/cosmos':
         specifier: 0.12.156
         version: 0.12.156(starknet@6.11.0)
@@ -1520,14 +1520,14 @@ packages:
   '@getpara/core-components@1.6.0':
     resolution: {integrity: sha512-sqt8hULrYgICMZ7+6SnGlbB2oYvPo3X3LMCTBjrxC72RzWLYcbSxK5g1G818WRlODu+dLJXIRHJvTKmhzsU4qw==}
 
-  '@getpara/core-components@2.0.0-alpha.50':
-    resolution: {integrity: sha512-QvkVve+eily33PCzdTrOrkPOnEv3E6D/eaUrpGyFyNCEZZC6Go1NGGsBs6l2xuewlJKZOFnBZf0hoE2dDyG//g==}
+  '@getpara/core-components@2.0.0-alpha.51':
+    resolution: {integrity: sha512-YBTTUKxH6wnAjFRiK06PctWRvEGDioh0n8XDk1I/E6s9tKHcxKQKubBYPR6Yt3YMQLhzi3ShM6tBJ06S39aPqA==}
 
   '@getpara/core-sdk@1.6.0':
     resolution: {integrity: sha512-XJP2GYLrTZITZAgcCF/WcMtyc6t79+jSi7RcRmQhR6xMTGvLgxJ2DGUASXqDWD7Nff9M3lgltRHEC5fMnZMGfA==}
 
-  '@getpara/core-sdk@2.0.0-alpha.50':
-    resolution: {integrity: sha512-Qu6Ep6h1qnrbsCqSy1O8cwIuELe/A8QXB8qGVgaxcrCq5W1cdI45YPSSvPfe3dEC2Fl61VHNUxB4gTq1m6JcOA==}
+  '@getpara/core-sdk@2.0.0-alpha.51':
+    resolution: {integrity: sha512-AtcTSa4GZaVmYQ94Vi05YRKkE9yhi4DvetaknjmV0q4Sp2XlN/FpE7ufmPWYQoKmwQxD0sT3yrpBw9dwOEaLVQ==}
 
   '@getpara/cosmjs-v0-integration@1.6.0':
     resolution: {integrity: sha512-3j99YdNEymIC5RKwL7VVd8NBIEvBRyG2VJGtCvnMSiFaCzANbUKiHqeNhzDHWQ713mV0K5d6RHfX/y2sSDlr9w==}
@@ -1536,23 +1536,23 @@ packages:
       '@cosmjs/encoding': '>= 0.31.3 < 1'
       '@cosmjs/proto-signing': '>= 0.31.3 < 1'
 
-  '@getpara/cosmjs-v0-integration@2.0.0-alpha.50':
-    resolution: {integrity: sha512-Uz8EQLrthqJTAub4O1CrCgYih3oUqE4gYipS3s/9nZbZMh2BBvdrJMyssQ8MBgiBkrU47C2xf6TEH4CaI9GkmA==}
+  '@getpara/cosmjs-v0-integration@2.0.0-alpha.51':
+    resolution: {integrity: sha512-OwJQZ7zRH2TVCbMUTcJfjWhEWOEXX1QZ5fITeycE0lbOEibEZovg2uTbgfN1zBekyidMFYU8Es4ltT6NNGEzqg==}
     peerDependencies:
       '@cosmjs/amino': '>= 0.31.3 < 1'
       '@cosmjs/encoding': '>= 0.31.3 < 1'
       '@cosmjs/proto-signing': '>= 0.31.3 < 1'
       '@cosmjs/stargate': '>= 0.31.3 < 1'
 
-  '@getpara/cosmos-wallet-connectors@2.0.0-alpha.50':
-    resolution: {integrity: sha512-Rpf2V+HKP4MjSheB1GGLIIKXndKJ65kH2aULR8MulxJFBOnosE27rELsrl0e07+NS0McEcKnfZPsnTwY2dU+Rg==}
+  '@getpara/cosmos-wallet-connectors@2.0.0-alpha.51':
+    resolution: {integrity: sha512-Sh0c1g0tcifvaiCwxBye22xrTe5t9Hg0PEQQLCQu+b9ReaoF15gbgJW6/NNbU73TrayubLsqBlp7RJrtZVwrqg==}
     peerDependencies:
       '@getpara/graz': '>=2.0.0-alpha.5'
       react: '>=18'
       react-dom: '>=18'
 
-  '@getpara/evm-wallet-connectors@2.0.0-alpha.50':
-    resolution: {integrity: sha512-Kv4YvPz0rX3z2EkuCt8fmcokNvWDNz+4/6+u/uZuoBeWaJ7o7hzui7AXJbOkR0eQ/M4bYhXjNq1m9prXuAxDeA==}
+  '@getpara/evm-wallet-connectors@2.0.0-alpha.51':
+    resolution: {integrity: sha512-WQHFuwxZJ2fERWEs6/bNyBYUJOCv7VIoF/pEGDXRjgN1N6IM+p+ImcZctV05+B99YeJAoHSPEYG4Kirsh63N1w==}
     peerDependencies:
       '@farcaster/miniapp-wagmi-connector': ^1.0.0
       '@tanstack/react-query': '>=5.0.0'
@@ -1584,8 +1584,8 @@ packages:
       react: '*'
       react-dom: '*'
 
-  '@getpara/react-common@2.0.0-alpha.50':
-    resolution: {integrity: sha512-mgUGd5K9Q/r2ZSLXCPcn4i0U3yRv2XB5gfNUwiSyXvl+EZafmUE+ILaOmBFqPjw8Sr4z7OdFOAVW9k3qk//nbQ==}
+  '@getpara/react-common@2.0.0-alpha.51':
+    resolution: {integrity: sha512-w7nwP7Yjqj6lHiXCg9E5jGtgxW4psa4add8/4Y9yk2XjJ1IePLQTdTy09eysYBD0iujSid/DbiFUmqQptxBv6A==}
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -1593,11 +1593,11 @@ packages:
   '@getpara/react-components@1.6.0':
     resolution: {integrity: sha512-SYfhIfoQljobNBp9IG6wE6GTpHa+6PhxuwSheqLkKN9D0alzqd+yg3xf4y56CzqvvK/JkOktmXhEaYlkA1bGrA==}
 
-  '@getpara/react-components@2.0.0-alpha.50':
-    resolution: {integrity: sha512-r8F+Me33IPBLau6VO2kdAKG62Qb5GjLCYnOrpWgM4C8A/O+OUiocXNq1xKBICFRpqw42CPChe9L339gl2IKr4g==}
+  '@getpara/react-components@2.0.0-alpha.51':
+    resolution: {integrity: sha512-Qz7VGMIODD6h3jEsWdKl+ImG+g3vm2v1C8tAs6ae9GHkTHfeUd4IciP5S7xNbeZ6nPY80YXLM/YT2xE/tY6IWw==}
 
-  '@getpara/react-sdk-lite@2.0.0-alpha.50':
-    resolution: {integrity: sha512-T20/NxUUWDTePMLAOH6aE1oSs1dtCqfWu5Af4UuJv+LTdlYyYQde79/nlfNTAu1qr/mXmRwI9vrN5Iq3fGncAg==}
+  '@getpara/react-sdk-lite@2.0.0-alpha.51':
+    resolution: {integrity: sha512-x0nV5cy+29b+CjyzwKIE4DiyfulS3VQbjqBqaqagQAT/ojrvO955hBiV+ha/J/pSn3nb3rFk9DIc/NFURNrVig==}
     hasBin: true
     peerDependencies:
       '@tanstack/react-query': '>=5.0.0'
@@ -1610,16 +1610,16 @@ packages:
       react: '*'
       react-dom: '*'
 
-  '@getpara/react-sdk@2.0.0-alpha.50':
-    resolution: {integrity: sha512-JOeWCfBBJNn7WDhmFvvsvgOY7tbl3fofyGomvj7aNTSZuRC+9GzZZmCX0rfcAlKhVx+30CsLgzq5ohuhibfhLA==}
+  '@getpara/react-sdk@2.0.0-alpha.51':
+    resolution: {integrity: sha512-iiMSt7G4vdDTeK6nPvXLmIwYXZtz0Bm7S9WQlc4/dHtiw/++msxiyHl7CWUHbKdrNM5VnPEt8o/QbdeWisTrYg==}
     hasBin: true
     peerDependencies:
       '@tanstack/react-query': '>=5.0.0'
       react: '*'
       react-dom: '*'
 
-  '@getpara/solana-signers-v2-integration@2.0.0-alpha.50':
-    resolution: {integrity: sha512-cWrXC9jl9QZM2VmnakdRTdeqUCyGjy1tQ5tgIrMdfW5+woz/LTR3UaXyNnvr0OzAVOvxZ6r0yLXB9qXmvMIe7w==}
+  '@getpara/solana-signers-v2-integration@2.0.0-alpha.51':
+    resolution: {integrity: sha512-GgeSVNaD0Thu7wguzxRVT0zp2hgafwtFAsW5b5tHmVDRQtfQPYc3Zmq6rTziqQ2kJA0lUNYfml1KIgskyj3Uig==}
     peerDependencies:
       '@solana/addresses': 2.x
       '@solana/keys': 2.x
@@ -1628,8 +1628,8 @@ packages:
       '@solana/signers': 2.x
       '@solana/transactions': 2.x
 
-  '@getpara/solana-wallet-connectors@2.0.0-alpha.50':
-    resolution: {integrity: sha512-Bs7lXag+5yQtxNMBG4i9OY/J9Uu3dRriDOJ5KfmKeApvv0y3aTOAq9A395trpVoZ1WEMURMpgAI2P/UUE+V2Aw==}
+  '@getpara/solana-wallet-connectors@2.0.0-alpha.51':
+    resolution: {integrity: sha512-RHsH1HNGvvvi088N6Gvh9v9YpiCm4J48Mk/MwhIU+MPo0o2YXXc2iTIex+d/p2B5cUgIpp79o+VDJqXRGAS2bw==}
     peerDependencies:
       '@farcaster/mini-app-solana': ^1.0.0
       '@solana-mobile/wallet-adapter-mobile': 2.x
@@ -1645,16 +1645,16 @@ packages:
   '@getpara/user-management-client@1.6.0':
     resolution: {integrity: sha512-fsoBWgB5nYOt0c2xmpb/nuvFpMEAOzsllme+m0nk+g9pshARy30SAFj1VViYBDkIBtgt/KAgxVgaJD7pMbyF5w==}
 
-  '@getpara/user-management-client@2.0.0-alpha.50':
-    resolution: {integrity: sha512-BYD2aJUttDOkPEfL1WnoFvROgkhM6u6Ofe6gwKEZjqVvM1eY2o0vFw0uEs3jMOu2Hoeh18eA+kztOB7teQBUUQ==}
+  '@getpara/user-management-client@2.0.0-alpha.51':
+    resolution: {integrity: sha512-ZTungkDZFp5oCBdvbGCxBzy7d63EFvWaxv3QXGFZ0+UwNL4fN2UOFJ1ULnlmsKTzmfswvbSE7byFzVbTSY9TdA==}
 
-  '@getpara/viem-v2-integration@2.0.0-alpha.50':
-    resolution: {integrity: sha512-K/XnOJG+Sy4cxrqBESjFK6LzJscDhioH4KCER+rLG+33qZ+ah5FBaB2SA6B8lRzC/k0eEPnLYQEaNPpIaRga2w==}
+  '@getpara/viem-v2-integration@2.0.0-alpha.51':
+    resolution: {integrity: sha512-SD8iApTslTuGqRkvCHQNM8uzREh4uJKtuqZ5zQowFFy+7YKaokhUdfX7zN+FIVCD2yOhDYco9fwDctSLid7ZuA==}
     peerDependencies:
       viem: 2.x
 
-  '@getpara/wagmi-v2-connector@2.0.0-alpha.50':
-    resolution: {integrity: sha512-mNk2u3tvkdbCCw6AIiGTtUmxffxN3PSrdmHSpltsWUUkvwnI0029S/b4UKHilA6d7x5eQP8+zdLhkdDV9R9c5A==}
+  '@getpara/wagmi-v2-connector@2.0.0-alpha.51':
+    resolution: {integrity: sha512-D9k1TJa+eZLgDhLQ6/PZySuS0LaSe8AzjEc8pEp/FuqA6m164sol8mo7NwnE7CKrpcYqKc/XCFyReRzbfh/iNg==}
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -1664,8 +1664,8 @@ packages:
   '@getpara/web-sdk@1.6.0':
     resolution: {integrity: sha512-EFcYLQs0xKv9ahRT76q0KKVURAupnkLzTK0ygM9Mh9A/GhTDmGlUbYTF4rlazk60Xz69TDTjOmA8Bk6z+9OLmg==}
 
-  '@getpara/web-sdk@2.0.0-alpha.50':
-    resolution: {integrity: sha512-K40Y6dqZ+wCnKTzCgUrORfwBnnhO5YYQCVPgFCP/zuuPnNib3TUZCGjP2W6gOpsZkzMKM+y0FGy4rFthzP94pA==}
+  '@getpara/web-sdk@2.0.0-alpha.51':
+    resolution: {integrity: sha512-7ewxWEtAkvugV6V6EseYOs4KfmjSrQqu5HRFkEX60pzTcHLXB0Sd1hIhK3jaOnPDYWogfojTMjaSIjtkep8ZLg==}
     peerDependencies:
       '@farcaster/miniapp-sdk': ^0.1.2
     peerDependenciesMeta:
@@ -11720,7 +11720,7 @@ snapshots:
       inputmask: 5.0.9
       qrcode-with-logos: 1.1.1
 
-  '@getpara/core-components@2.0.0-alpha.50':
+  '@getpara/core-components@2.0.0-alpha.51':
     dependencies:
       '@stencil/core': 4.25.0
       color-blend: 4.0.0
@@ -11743,12 +11743,12 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@getpara/core-sdk@2.0.0-alpha.50':
+  '@getpara/core-sdk@2.0.0-alpha.51':
     dependencies:
       '@celo/utils': 8.0.2
       '@cosmjs/encoding': 0.32.4
       '@ethereumjs/util': 9.1.0
-      '@getpara/user-management-client': 2.0.0-alpha.50
+      '@getpara/user-management-client': 2.0.0-alpha.51
       '@noble/hashes': 1.8.0
       base64url: 3.0.1
       libphonenumber-js: 1.12.10
@@ -11766,21 +11766,21 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@getpara/cosmjs-v0-integration@2.0.0-alpha.50(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.32.4)(@cosmjs/proto-signing@0.31.3)(@cosmjs/stargate@0.31.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))':
+  '@getpara/cosmjs-v0-integration@2.0.0-alpha.51(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.32.4)(@cosmjs/proto-signing@0.31.3)(@cosmjs/stargate@0.31.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))':
     dependencies:
       '@cosmjs/amino': 0.31.3
       '@cosmjs/encoding': 0.32.4
       '@cosmjs/proto-signing': 0.31.3
       '@cosmjs/stargate': 0.31.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)
-      '@getpara/core-sdk': 2.0.0-alpha.50
+      '@getpara/core-sdk': 2.0.0-alpha.51
     transitivePeerDependencies:
       - debug
 
-  '@getpara/cosmos-wallet-connectors@2.0.0-alpha.50(77993b0e2737e62529c52158c1b040ef)':
+  '@getpara/cosmos-wallet-connectors@2.0.0-alpha.51(77993b0e2737e62529c52158c1b040ef)':
     dependencies:
       '@getpara/graz': 1.0.0-dev.2(@cosmjs/amino@0.31.3)(@cosmjs/cosmwasm-stargate@0.31.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.32.4)(@cosmjs/launchpad@0.27.1)(@cosmjs/proto-signing@0.31.3)(@cosmjs/stargate@0.31.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@cosmjs/tendermint-rpc@0.31.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))(@emotion/is-prop-valid@1.2.2)(@leapwallet/cosmos-social-login-capsule-provider@0.0.41(@cosmjs/encoding@0.32.4)(@cosmjs/proto-signing@0.31.3)(fp-ts@2.16.9))(@react-native-async-storage/async-storage@1.24.0(react-native@0.80.0(@babel/core@7.27.4)(@types/react@18.2.21)(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.61.4(react@18.2.0))(@terra-money/feather.js@3.0.0-beta.2)(@types/react@18.2.21)(axios@1.9.0)(bufferutil@4.0.8)(immer@9.0.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(starknet@6.11.0)(utf-8-validate@5.0.10)
-      '@getpara/react-common': 2.0.0-alpha.50(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@getpara/web-sdk': 2.0.0-alpha.50
+      '@getpara/react-common': 2.0.0-alpha.51(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@getpara/web-sdk': 2.0.0-alpha.51
       '@leapwallet/cosmos-social-login-capsule-provider': 0.0.41(@cosmjs/encoding@0.32.4)(@cosmjs/proto-signing@0.31.3)(fp-ts@2.16.9)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -11797,11 +11797,11 @@ snapshots:
       - fp-ts
       - immer
 
-  '@getpara/evm-wallet-connectors@2.0.0-alpha.50(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(immer@9.0.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(wagmi@2.15.6(@react-native-async-storage/async-storage@1.24.0(react-native@0.80.0(@babel/core@7.27.4)(@types/react@18.2.21)(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10)))(@tanstack/query-core@5.61.4)(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(bufferutil@4.0.8)(immer@9.0.21)(react@18.2.0)(typescript@5.2.2)(utf-8-validate@5.0.10)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(zod@3.23.8))':
+  '@getpara/evm-wallet-connectors@2.0.0-alpha.51(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(immer@9.0.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(wagmi@2.15.6(@react-native-async-storage/async-storage@1.24.0(react-native@0.80.0(@babel/core@7.27.4)(@types/react@18.2.21)(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10)))(@tanstack/query-core@5.61.4)(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(bufferutil@4.0.8)(immer@9.0.21)(react@18.2.0)(typescript@5.2.2)(utf-8-validate@5.0.10)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(zod@3.23.8))':
     dependencies:
       '@coinbase/wallet-sdk': 4.3.0
-      '@getpara/wagmi-v2-connector': 2.0.0-alpha.50(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(wagmi@2.15.6(@react-native-async-storage/async-storage@1.24.0(react-native@0.80.0(@babel/core@7.27.4)(@types/react@18.2.21)(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10)))(@tanstack/query-core@5.61.4)(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(bufferutil@4.0.8)(immer@9.0.21)(react@18.2.0)(typescript@5.2.2)(utf-8-validate@5.0.10)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(zod@3.23.8))
-      '@getpara/web-sdk': 2.0.0-alpha.50
+      '@getpara/wagmi-v2-connector': 2.0.0-alpha.51(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(wagmi@2.15.6(@react-native-async-storage/async-storage@1.24.0(react-native@0.80.0(@babel/core@7.27.4)(@types/react@18.2.21)(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10)))(@tanstack/query-core@5.61.4)(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(bufferutil@4.0.8)(immer@9.0.21)(react@18.2.0)(typescript@5.2.2)(utf-8-validate@5.0.10)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(zod@3.23.8))
+      '@getpara/web-sdk': 2.0.0-alpha.51
       '@tanstack/react-query': 5.61.4(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -11888,10 +11888,10 @@ snapshots:
       - debug
       - encoding
 
-  '@getpara/react-common@2.0.0-alpha.50(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@getpara/react-common@2.0.0-alpha.51(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@getpara/react-components': 2.0.0-alpha.50
-      '@getpara/web-sdk': 2.0.0-alpha.50
+      '@getpara/react-components': 2.0.0-alpha.51
+      '@getpara/web-sdk': 2.0.0-alpha.51
       '@moonpay/moonpay-react': 1.8.3(react@18.2.0)
       '@ramp-network/ramp-instant-sdk': 4.0.7
       libphonenumber-js: 1.12.10
@@ -11908,15 +11908,15 @@ snapshots:
     dependencies:
       '@getpara/core-components': 1.6.0
 
-  '@getpara/react-components@2.0.0-alpha.50':
+  '@getpara/react-components@2.0.0-alpha.51':
     dependencies:
-      '@getpara/core-components': 2.0.0-alpha.50
+      '@getpara/core-components': 2.0.0-alpha.51
 
-  '@getpara/react-sdk-lite@2.0.0-alpha.50(@emotion/is-prop-valid@1.2.2)(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(immer@9.0.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@getpara/react-sdk-lite@2.0.0-alpha.51(@emotion/is-prop-valid@1.2.2)(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(immer@9.0.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@getpara/react-common': 2.0.0-alpha.50(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@getpara/react-components': 2.0.0-alpha.50
-      '@getpara/web-sdk': 2.0.0-alpha.50
+      '@getpara/react-common': 2.0.0-alpha.51(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@getpara/react-components': 2.0.0-alpha.51
+      '@getpara/web-sdk': 2.0.0-alpha.51
       '@tanstack/react-query': 5.61.4(react@18.2.0)
       date-fns: 3.6.0
       framer-motion: 11.18.2(@emotion/is-prop-valid@1.2.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -11955,15 +11955,15 @@ snapshots:
       - encoding
       - immer
 
-  '@getpara/react-sdk@2.0.0-alpha.50(88d013255ddedf3b9d16f60cd0bc25e4)':
+  '@getpara/react-sdk@2.0.0-alpha.51(88d013255ddedf3b9d16f60cd0bc25e4)':
     dependencies:
-      '@getpara/cosmjs-v0-integration': 2.0.0-alpha.50(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.32.4)(@cosmjs/proto-signing@0.31.3)(@cosmjs/stargate@0.31.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))
-      '@getpara/cosmos-wallet-connectors': 2.0.0-alpha.50(77993b0e2737e62529c52158c1b040ef)
-      '@getpara/evm-wallet-connectors': 2.0.0-alpha.50(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(immer@9.0.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(wagmi@2.15.6(@react-native-async-storage/async-storage@1.24.0(react-native@0.80.0(@babel/core@7.27.4)(@types/react@18.2.21)(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10)))(@tanstack/query-core@5.61.4)(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(bufferutil@4.0.8)(immer@9.0.21)(react@18.2.0)(typescript@5.2.2)(utf-8-validate@5.0.10)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(zod@3.23.8))
-      '@getpara/react-sdk-lite': 2.0.0-alpha.50(@emotion/is-prop-valid@1.2.2)(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(immer@9.0.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@getpara/solana-signers-v2-integration': 2.0.0-alpha.50(@solana/addresses@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/keys@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/rpc-api@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/rpc-spec@2.3.0(typescript@5.2.2))(@solana/signers@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/transactions@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))
-      '@getpara/solana-wallet-connectors': 2.0.0-alpha.50(3c2019d6d609993e2dadf1ae979d1ca9)
-      '@getpara/viem-v2-integration': 2.0.0-alpha.50(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))
+      '@getpara/cosmjs-v0-integration': 2.0.0-alpha.51(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.32.4)(@cosmjs/proto-signing@0.31.3)(@cosmjs/stargate@0.31.0(bufferutil@4.0.8)(utf-8-validate@5.0.10))
+      '@getpara/cosmos-wallet-connectors': 2.0.0-alpha.51(77993b0e2737e62529c52158c1b040ef)
+      '@getpara/evm-wallet-connectors': 2.0.0-alpha.51(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(immer@9.0.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(wagmi@2.15.6(@react-native-async-storage/async-storage@1.24.0(react-native@0.80.0(@babel/core@7.27.4)(@types/react@18.2.21)(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10)))(@tanstack/query-core@5.61.4)(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(bufferutil@4.0.8)(immer@9.0.21)(react@18.2.0)(typescript@5.2.2)(utf-8-validate@5.0.10)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(zod@3.23.8))
+      '@getpara/react-sdk-lite': 2.0.0-alpha.51(@emotion/is-prop-valid@1.2.2)(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(immer@9.0.21)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@getpara/solana-signers-v2-integration': 2.0.0-alpha.51(@solana/addresses@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/keys@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/rpc-api@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/rpc-spec@2.3.0(typescript@5.2.2))(@solana/signers@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/transactions@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))
+      '@getpara/solana-wallet-connectors': 2.0.0-alpha.51(3c2019d6d609993e2dadf1ae979d1ca9)
+      '@getpara/viem-v2-integration': 2.0.0-alpha.51(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))
       '@tanstack/react-query': 5.61.4(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -11995,9 +11995,9 @@ snapshots:
       - viem
       - wagmi
 
-  '@getpara/solana-signers-v2-integration@2.0.0-alpha.50(@solana/addresses@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/keys@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/rpc-api@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/rpc-spec@2.3.0(typescript@5.2.2))(@solana/signers@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/transactions@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))':
+  '@getpara/solana-signers-v2-integration@2.0.0-alpha.51(@solana/addresses@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/keys@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/rpc-api@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/rpc-spec@2.3.0(typescript@5.2.2))(@solana/signers@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))(@solana/transactions@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2))':
     dependencies:
-      '@getpara/core-sdk': 2.0.0-alpha.50
+      '@getpara/core-sdk': 2.0.0-alpha.51
       '@solana/addresses': 2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2)
       '@solana/keys': 2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2)
       '@solana/rpc-api': 2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.2.2)
@@ -12008,10 +12008,10 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@getpara/solana-wallet-connectors@2.0.0-alpha.50(3c2019d6d609993e2dadf1ae979d1ca9)':
+  '@getpara/solana-wallet-connectors@2.0.0-alpha.51(3c2019d6d609993e2dadf1ae979d1ca9)':
     dependencies:
-      '@getpara/react-common': 2.0.0-alpha.50(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@getpara/web-sdk': 2.0.0-alpha.50
+      '@getpara/react-common': 2.0.0-alpha.51(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@getpara/web-sdk': 2.0.0-alpha.51
       '@solana-mobile/wallet-adapter-mobile': 2.1.3(@solana/web3.js@1.98.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10))(react-native@0.80.0(@babel/core@7.27.4)(@types/react@18.2.21)(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0)
       '@solana/wallet-adapter-base': 0.9.23(@solana/web3.js@1.98.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10))
       '@solana/wallet-adapter-react': 0.15.35(@solana/web3.js@1.98.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10))(bs58@5.0.0)(react-native@0.80.0(@babel/core@7.27.4)(@types/react@18.2.21)(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10))(react@18.2.0)
@@ -12032,24 +12032,24 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@getpara/user-management-client@2.0.0-alpha.50':
+  '@getpara/user-management-client@2.0.0-alpha.51':
     dependencies:
       axios: 1.9.0
       libphonenumber-js: 1.12.10
     transitivePeerDependencies:
       - debug
 
-  '@getpara/viem-v2-integration@2.0.0-alpha.50(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))':
+  '@getpara/viem-v2-integration@2.0.0-alpha.51(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))':
     dependencies:
-      '@getpara/core-sdk': 2.0.0-alpha.50
+      '@getpara/core-sdk': 2.0.0-alpha.51
       viem: 2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8)
     transitivePeerDependencies:
       - debug
 
-  '@getpara/wagmi-v2-connector@2.0.0-alpha.50(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(wagmi@2.15.6(@react-native-async-storage/async-storage@1.24.0(react-native@0.80.0(@babel/core@7.27.4)(@types/react@18.2.21)(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10)))(@tanstack/query-core@5.61.4)(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(bufferutil@4.0.8)(immer@9.0.21)(react@18.2.0)(typescript@5.2.2)(utf-8-validate@5.0.10)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(zod@3.23.8))':
+  '@getpara/wagmi-v2-connector@2.0.0-alpha.51(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(wagmi@2.15.6(@react-native-async-storage/async-storage@1.24.0(react-native@0.80.0(@babel/core@7.27.4)(@types/react@18.2.21)(bufferutil@4.0.8)(react@18.2.0)(utf-8-validate@5.0.10)))(@tanstack/query-core@5.61.4)(@tanstack/react-query@5.61.4(react@18.2.0))(@types/react@18.2.21)(bufferutil@4.0.8)(immer@9.0.21)(react@18.2.0)(typescript@5.2.2)(utf-8-validate@5.0.10)(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))(zod@3.23.8))':
     dependencies:
-      '@getpara/viem-v2-integration': 2.0.0-alpha.50(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))
-      '@getpara/web-sdk': 2.0.0-alpha.50
+      '@getpara/viem-v2-integration': 2.0.0-alpha.51(viem@2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8))
+      '@getpara/web-sdk': 2.0.0-alpha.51
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       viem: 2.31.2(bufferutil@4.0.8)(typescript@5.2.2)(utf-8-validate@5.0.10)(zod@3.23.8)
@@ -12074,10 +12074,10 @@ snapshots:
       - debug
       - encoding
 
-  '@getpara/web-sdk@2.0.0-alpha.50':
+  '@getpara/web-sdk@2.0.0-alpha.51':
     dependencies:
-      '@getpara/core-sdk': 2.0.0-alpha.50
-      '@getpara/user-management-client': 2.0.0-alpha.50
+      '@getpara/core-sdk': 2.0.0-alpha.51
+      '@getpara/user-management-client': 2.0.0-alpha.51
       base64url: 3.0.1
       buffer: 6.0.3
       cbor-web: 9.0.2
